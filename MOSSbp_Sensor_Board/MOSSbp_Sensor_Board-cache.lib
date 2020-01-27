@@ -62,6 +62,57 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_BMI160
+#
+DEF dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_BMI160 U 0 40 Y Y 1 F N
+F0 "U" -300 350 50 H V L CNN
+F1 "dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_BMI160" 150 -400 50 H V L CNN
+F2 "digikey-footprints:BMI160" 200 200 60 H I L CNN
+F3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" 200 300 60 H I L CNN
+F4 "828-1057-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "BMI160" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Motion Sensors - IMUs (Inertial Measurement Units)" 200 700 60 H I L CNN "Family"
+F8 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/bosch-sensortec/BMI160/828-1057-1-ND/6136308" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IMU ACCEL/GYRO I2C/SPI 14LGA" 200 1000 60 H I L CNN "Description"
+F11 "Bosch Sensortec" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 300 400 -350 0 1 0 f
+X SDO 1 500 200 100 L 50 50 1 1 O
+X OCSB 10 -400 0 100 R 50 50 1 1 B
+X OSDO 11 -400 -100 100 R 50 50 1 1 B
+X CSB 12 -400 -200 100 R 50 50 1 1 B
+X SC 13 500 -200 100 L 50 50 1 1 B
+X SD 14 500 -100 100 L 50 50 1 1 B
+X ASD 2 500 100 100 L 50 50 1 1 B
+X ASC 3 500 0 100 L 50 50 1 1 B
+X INT1 4 -400 200 100 R 50 50 1 1 B
+X VDDIO 5 0 400 100 D 50 50 1 1 W
+X GND 6 100 -450 100 U 50 50 1 1 W
+X GND 7 0 -450 100 U 50 50 1 1 W
+X VDD 8 100 400 100 D 50 50 1 1 W
+X INT2 9 -400 100 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # dk_Specialized-Sensors_BME680
 #
 DEF dk_Specialized-Sensors_BME680 U 0 40 Y Y 1 F N
